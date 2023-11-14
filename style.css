@@ -1,0 +1,36 @@
+body{
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+}
+.fond{
+    background-image: url(images/fancy-pants.jpg);
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    color: white;
+}
+nav{
+    width: 80%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.sith, .rebels{
+    font-size: large;
+    text-decoration: underline red 3px;
+}
+.jedi, .empire{
+    font-size: large;
+    text-decoration: underline aqua 3px;
+}
+li{
+    font-size: 10px;
+    color: #ffffff;
+    list-style-type: none;
+}
+
