@@ -1,36 +1,61 @@
-body{
-    background-color: #0a0a0a;
-    display: flex;
-    justify-content: center;
-}
-.fond{
+body {
     background-image: url(images/fancy-pants.jpg);
-    width: 50%;
+    margin: 20px 10px 0 10px;
+}
+
+.header {
     display: flex;
-    text-align: center;
+    align-items: flex-start;
 }
-h2{
-    font-size: 20px;
-    color: white;
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
 }
-nav{
+
+.logo>img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    margin-right: 15px;
     width: 80%;
-    padding-bottom: 15px;
+}
+
+.menu-ul {
     display: flex;
+    flex-direction: row;
     justify-content: end;
 }
 
-.sith, .rebels{
-    font-size: large;
-    text-decoration: underline red 3px;
+h1 {
+    color: #fff;
+    font-size: 1.5em;
 }
-.jedi, .empire{
-    font-size: large;
-    text-decoration: underline aqua 3px;
+
+.redline {
+    width: 80%;
+    border-bottom: solid;
+    border-color: #f10707;
+}
+
+.blueline {
+    width: 80%;
+    border-bottom: solid;
+    border-color: #7072ee;
 }
 li{
-    font-size: 10px;
-    color: #ffffff;
     list-style-type: none;
+}
+.menu-ul>li>ul>li {
+    font-size: 0.9em;
+    color: #fff;
+}
+/*header ok*/
+.wallpaperdog{
+    background-image: url(images/WallpaperDog.jpg);
 }
 
