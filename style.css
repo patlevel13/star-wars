@@ -5,31 +5,33 @@ body {
 
 .header {
     display: flex;
-    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    text-align: center;
     width: 20%;
 }
 
 .logo>img {
     width: 100px;
-    height: 100px;
+
 }
 
 nav {
-    margin-right: 15px;
+
     width: 80%;
 }
 
 .menu-ul {
     display: flex;
-    flex-direction: row;
+
     justify-content: end;
 }
+
 
 h1 {
     color: #fff;
@@ -60,17 +62,18 @@ li {
 /*header ok*/
 .wallpaperdog {
     display: flex;
+
     border-top: solid #fff 10px;
     border-bottom: solid #fff 10px;
     background-image: url(images/WallpaperDog.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
     justify-content: space-evenly;
 }
 
-.wallpaperdog>div>img {
+.wallpaperdog div img {
     width: 100%;
-    flex-wrap: wrap;
+
 }
 
 .lorem {
@@ -82,61 +85,44 @@ li {
 /* A verifier*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     background-color: #fff;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    padding: 20px;
 }
 
-.grid>div {
-    display: flex;
-    justify-content: space-evenly;
 
-}
 
 .welcome {
-    grid-column: 1/4;
-    grid-row: 1/9;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-position: fixed;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
 }
 
 .lastest {
-    grid-column: 4/7;
-    grid-row: 1/5;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-position: fixed;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+
 }
 
 .our {
-    grid-column: 4/7;
-    grid-row: 5/9;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-position: fixed;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 20px;
 }
 
 .flexible {
-    grid-column: 7/13;
-    grid-row: 1/9;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-position: fixed;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    padding: 20px;
 }
 
 .subtitle {
     font-style: italic;
+    font-weight: lighter;
 }
 
 .welcome>img {
@@ -145,4 +131,27 @@ li {
 
 h2 {
     color: coral;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-weight: bold;
 }
