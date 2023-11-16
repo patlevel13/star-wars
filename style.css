@@ -47,15 +47,102 @@ h1 {
     border-bottom: solid;
     border-color: #7072ee;
 }
-li{
+
+li {
     list-style-type: none;
 }
+
 .menu-ul>li>ul>li {
     font-size: 0.9em;
     color: #fff;
 }
+
 /*header ok*/
-.wallpaperdog{
+.wallpaperdog {
+    display: flex;
+    border-top: solid #fff 10px;
+    border-bottom: solid #fff 10px;
     background-image: url(images/WallpaperDog.jpg);
+    background-size: cover;
+    background-position: fixed;
+    justify-content: space-evenly;
 }
 
+.wallpaperdog>div>img {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.lorem {
+    color: #fff;
+    margin: 30px;
+    font-size: large;
+}
+
+/* A verifier*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: #fff;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid>div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.welcome {
+    grid-column: 1/4;
+    grid-row: 1/9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-position: fixed;
+}
+
+.lastest {
+    grid-column: 4/7;
+    grid-row: 1/5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-position: fixed;
+}
+
+.our {
+    grid-column: 4/7;
+    grid-row: 5/9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-position: fixed;
+}
+
+.flexible {
+    grid-column: 7/13;
+    grid-row: 1/9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-position: fixed;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.welcome>img {
+    width: 200px;
+}
+
+h2 {
+    color: coral;
+}
